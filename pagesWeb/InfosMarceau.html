@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="fr"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta charset="UTF-8">
+  <title>Informations utilisateur</title>
+  <link href="Informations%20utilisateur_files/style.css" rel="stylesheet">
+</head>
+<body id="connexion">
+  <h1>Vos informations</h1>
+  <div id="informations"><p><strong>Adresse IP :</strong> 127.0.0.1</p><p><strong>Nom de l'hôte :</strong> localhost</p><p><strong>Navigateur :</strong> Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0</p><p><strong>Système d'exploitation :</strong> Linux</p><p><strong>Ville :</strong> Inconnu</p><p><strong>Pays :</strong> Inconnu</p><p><strong>Position :</strong> Inconnue</p></div>
+
+  <script>
+    fetch('informations.php')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('informations').innerHTML = data;
+      })
+      .catch(error => {
+        document.getElementById('informations').innerHTML = "Erreur lors du chargement des informations.";
+        console.error('Erreur:', error);
+      });
+  </script>
+
+</body></html>

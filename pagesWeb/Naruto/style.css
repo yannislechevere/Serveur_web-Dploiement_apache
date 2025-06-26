@@ -1,0 +1,566 @@
+:root {
+    --orange: #ff7800;
+    --dark-blue: #1a2b47;
+    --light-bg: #f5f5f5;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: var(--light-bg);
+}
+
+header {
+    background-color: var(--dark-blue);
+    color: white;
+    padding: 1rem;
+    position: relative;
+}
+
+.logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h1 {
+    font-size: 2rem;
+    color: white;
+}
+
+.logo span {
+    color: var(--orange);
+}
+
+nav {
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    justify-content: center;
+    display: flex;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 1rem;
+    justify-content: center;
+    width: 100%;              
+    max-width: 800px;         
+    margin: 0 auto;         
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--dark-blue);
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: var(--orange);
+}
+
+.hero {
+    position: relative;
+    height: 400px;
+    background-image: url("images/fond.jpg");
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    background-size: cover;       
+    background-position: center; 
+    background-repeat: no-repeat; 
+}
+
+.hero-content {
+    max-width: 800px;
+    padding: 2rem;
+}
+
+.hero h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background-color: var(--orange);
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #e56b00;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.section-title {
+    font-size: 2rem;
+    color: var(--dark-blue);
+    margin-bottom: 2rem;
+    text-align: center;
+    position: relative;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background-color: var(--orange);
+}
+
+.character-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.character-card {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.character-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.character-img {
+    height: 200px;
+    background-color: #e0e0e0;
+    display: flex;
+    
+    justify-content: center;
+}
+
+.character-info {
+    padding: 1.5rem;
+}
+
+.character-info h3 {
+    color: var(--dark-blue);
+    margin-bottom: 0.5rem;
+}
+
+.story-section {
+    background-color: white;
+    padding: 3rem 0;
+    margin: 2rem 0;
+}
+
+.story-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    align-items: center;
+}
+
+.story-text {
+    padding: 1rem;
+}
+
+.story-text h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: var(--dark-blue);
+}
+
+.manga-section {
+    background-color: var(--dark-blue);
+    color: white;
+    padding: 3rem 0;
+}
+
+.manga-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1.5rem;
+}
+
+.manga-item {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.manga-img {
+    height: 280px;
+    background-color: #e0e0e0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.manga-info {
+    padding: 1rem;
+    color: var(--dark-blue);
+}
+
+.manga-info h4 {
+    margin-bottom: 0.5rem;
+}
+
+.manga-info .price {
+    color: var(--orange);
+    font-weight: bold;
+}
+
+footer {
+    background-color: var(--dark-blue);
+    color: white;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.social-links a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: white;
+    color: var(--dark-blue);
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.social-links a:hover {
+    background-color: var(--orange);
+    color: white;
+    transform: scale(1.1);
+}
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    margin: 1rem 0;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: var(--orange);
+}
+
+
+
+
+/* Connexion */
+
+#connexion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+}
+
+#connexion h2 {
+  color: var(--dark-blue);
+  text-align: center;
+  margin-bottom: 2rem;
+  position: relative;
+  font-size: 2rem;
+}
+
+#connexion h2::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background-color: var(--orange);
+}
+
+#connexion form {
+  background-color: white;
+  border-radius: 8px;
+  padding: 2rem;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: var(--box-shadow);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+
+#connexion label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: var(--dark-blue);
+  font-weight: 600;
+}
+
+#connexion input[type="text"],
+#connexion input[type="email"],
+#connexion input[type="password"] {
+  width: 100%;
+  padding: 0.8rem;
+  margin-bottom: 1.5rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  transition: border-color 0.3s;
+}
+
+#connexion input[type="text"]:focus,
+#connexion input[type="email"]:focus,
+#connexion input[type="password"]:focus {
+  outline: none;
+  border-color: var(--orange);
+  box-shadow: 0 0 0 2px rgba(255, 120, 0, 0.2);
+}
+
+#connexion button[type="submit"] {
+  display: block;
+  width: 100%;
+  padding: 0.8rem 1.5rem;
+  background-color: var(--orange);
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: 600;
+  transition: background-color 0.3s;
+  border: none;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+#connexion button[type="submit"]:hover {
+  background-color: #e56b00;
+}
+
+
+#connexion .error-message {
+  color: #e74c3c;
+  text-align: center;
+  padding: 1rem;
+  border-left: 4px solid #e74c3c;
+  background-color: #fdedec;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+
+#connexion .signup-link {
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+#connexion .signup-link a {
+  color: var(--dark-blue);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.signup-link a:hover {
+  color: var(--orange);
+}
+
+
+@media (max-width: 480px) {
+  #connexion form {
+    padding: 1.5rem;
+  }
+  
+  #connexion h2 {
+    font-size: 1.5rem;
+  }
+}
+
+/* Information */
+#info {
+    background-color: var(--light-bg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 2rem;
+}
+
+#info body#connexion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+#info h1 {
+    color: var(--dark-blue);
+    text-align: center;
+    margin-bottom: 2rem;
+    position: relative;
+    font-size: 2rem;
+}
+
+#info h1::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background-color: var(--orange);
+}
+
+#info #informations {
+    background-color: white;
+    border-radius: 8px;
+    padding: 2rem;
+    width: 100%;
+    max-width: 600px;
+    box-shadow: var(--box-shadow);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#info #informations:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+#info #informations p {
+    padding: 0.8rem;
+    margin-bottom: 0.5rem;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#info #informations p:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+#info #informations strong {
+    color: var(--dark-blue);
+    font-weight: 600;
+    margin-right: 1rem;
+}
+
+
+#info #informations.error {
+    color: #e74c3c;
+    text-align: center;
+    padding: 1rem;
+    border-left: 4px solid #e74c3c;
+    background-color: #fdedec;
+    border-radius: 4px;
+}
+
+
+#info .btn-return {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background-color: var(--orange);
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: 600;
+    transition: background-color 0.3s;
+    margin-top: 2rem;
+}
+
+#info .btn-return:hover {
+    background-color: #e56b00;
+}
+
+
+@media (max-width: 480px) {
+    #info #informations {
+        padding: 1.5rem;
+    }
+    
+    #info h1 {
+        font-size: 1.5rem;
+    }
+    
+    #info #informations p {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    #info #informations strong {
+        margin-bottom: 0.3rem;
+    }
+}
+
+#info nav {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    width: 50px;
+    height: 50px;
+    background-color: #f5f5f5;
+    box-shadow: none;
+}
+
+#info nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#info nav li a {
+    text-decoration: none;
+    color: var(--dark-blue); 
+    font-weight: bold;
+}
