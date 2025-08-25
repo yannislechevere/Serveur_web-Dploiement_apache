@@ -1,4 +1,0 @@
-CREATE USER 'phpuser'@'localhost' IDENTIFIED BY 'lannion';
-GRANT ALL PRIVILEGES ON *.* TO 'phpuser'@'localhost';
-FLUSH PRIVILEGES;
-EXIT;

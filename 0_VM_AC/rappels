@@ -1,4 +1,0 @@
-user : root
-mdp : password
-
-resize fenetre : xrandr --output Virtual-1 --auto

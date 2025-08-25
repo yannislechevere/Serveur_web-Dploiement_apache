@@ -1,4 +1,0 @@
-apt update
-
-apd install firefox-esr
-
