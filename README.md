@@ -27,7 +27,7 @@ Plus précisément, nous avons appris à configurer, déployer et documenter un 
 >> - Structure HTML/CSS respectant les consignes
 >> - Intégration d’éléments interactifs et multimédias
 >>
->> 📂 (PagesWeb)[https://github.com/yannislechevere/SAE-2.03/tree/master/pagesWeb]
+>> 📂 [PagesWeb](https://github.com/yannislechevere/SAE-2.03/tree/master/pagesWeb)
 >
 > </details>
 
@@ -41,7 +41,7 @@ Plus précisément, nous avons appris à configurer, déployer et documenter un 
 >> - La méthodologie employée
 >> - Des **captures d’écran** illustrant le fonctionnement du site et le respect des consignes
 >>
->> 📂 (Rendu)[https://github.com/yannislechevere/SAE-2.03/tree/master/rendu]
+>> 📂 [Rendu](https://github.com/yannislechevere/SAE-2.03/tree/master/rendu)
 >
 > </details>
 
@@ -54,7 +54,7 @@ Plus précisément, nous avons appris à configurer, déployer et documenter un 
 >> - Preuves visuelles du rendu et de la conformité du site
 >> - Organisation claire pour faciliter la relecture du rapport
 >>
->> 📂 (Screenshots)[https://github.com/yannislechevere/SAE-2.03/tree/master/screens]
+>> 📂 [Screenshots](https://github.com/yannislechevere/SAE-2.03/tree/master/screens)
 >
 > </details>
 
@@ -67,7 +67,7 @@ Plus précisément, nous avons appris à configurer, déployer et documenter un 
 >> - Documentation technique sur Apache ou le développement web
 >> - Astuces, scripts, ou ressources supplémentaires pour faciliter la prise en main du projet
 >>
->> 📂 (Utilitaires)[https://github.com/yannislechevere/SAE-2.03/tree/master/utilitaires]
+>> 📂 [Utilitaires](https://github.com/yannislechevere/SAE-2.03/tree/master/utilitaires)
 >
 > </details>
 
